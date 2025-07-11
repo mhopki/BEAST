@@ -89,13 +89,13 @@
     <img src="exp_3.jpg" alt="Outdoor Structured">
   </div>
   <p>
-    We conducted our experiments across three environments: a controlled indoor testbed for initial validation, an outdoor crop row to simulate real field conditions, and a dedicated mobile robot equipped with sensing hardware for deployment. Each setting helped validate different aspects of the sensor-detector system under various lighting and structural conditions.
+    We conducted our experiments across three environments: structured indoors, unstructured outoors, and structured outdoors.
   </p>
 
   <h2>Leaf Sensor Detection</h2>
   <img src="yolo_detections_tile_abcd_color_altered.png" alt="Sensor Detection Example">
   <p>
-    The robot’s onboard RGB camera, combined with a deep object detector, accurately locates each sensor in the field of view. The detection step is crucial for triggering precise alignment of the hyperspectral imaging unit. Robust detection under varying lighting was achieved with a small dataset of labeled sensor patches.
+    We trained an object detector to detect our leaf sensors in our various experimental environments.
   </p>
 
   <h2>Leaf Sensor Resonance Acquisition</h2>
@@ -103,7 +103,7 @@
     <img src="Sensor_OutdoorCharacterization1.png" alt="Peak Expectation">
     <img src="Sensor_OutdoorCharacterization2.png" alt="Experimental Peaks">
   </div>
-    After detection, a motorized mirror system guides the hyperspectral camera toward the sensor. A halogen light source ensures consistent illumination. The captured spectrum is then analyzed for resonance patterns that correspond to specific crop health indicators. This approach achieved ~80% accuracy in classifying sensor states within the target detection range.
+    We acquired a specific spectral resonance from the leaf sensor, correlating to the peaks in the image above.
   </p>
 
   <h2>BibTeX</h2>

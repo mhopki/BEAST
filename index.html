@@ -79,7 +79,7 @@
   </div>
   <img src="pipeline.png" alt="System Pipeline Diagram">
   <p>
-    The proposed pipeline has 3 parts. First a leaf sensor, capable of reflecting a spectral resonance, is afixed to a plant. Second, the ground autonomously navigates through the row crop environment and locates the leaf sensor with is object detector. The onboard hyperspectral camera and motorized mirror system takes in the leaf sensor coordinates and takes a hyperspectral image of the sensor, allowing for retrieval of the leaf sensor's spectral resonance.
+    The proposed system consists of three key components. First, a colorimetric leaf sensor, capable of producing a measurable spectral resonance, is affixed directly to the surface of a plant. Second, a ground robot autonomously navigates through the row-crop environment, using an onboard RGB camera and object detector to locate the sensor. Finally, an onboard hyperspectral imaging system, integrating a motorized mirror and halogen illumination, captures detailed spectral data at the sensor’s location, enabling accurate retrieval of the sensor’s optical signature.
   </p>
 
   <h2>Experimental Settings</h2>
@@ -89,20 +89,20 @@
     <img src="exp_3.jpg" alt="Outdoor Structured">
   </div>
   <p>
-    We conducted our experiments across three environments: structured indoors, unstructured outoors, and structured outdoors.
+    Experiments were conducted across three distinct environments: a structured indoor environment, an unstructured outdoor environment, and a structured outdoor environment.
   </p>
 
   <h2>Leaf Sensor Detection</h2>
   <img src="yolo_detections_tile_abcd_color_altered.png" alt="Sensor Detection Example">
   <p>
-    We trained an object detector to detect our leaf sensors in our various experimental environments.
+    An object detector was trained to reliably identify the colorimetric leaf sensors across all experimental environments.
   </p>
 
   <h2>Leaf Sensor Resonance Acquisition</h2>
   <div class="image-row">
     <img src="Sensor_OutdoorCharacterization1.png" alt="Peak Expectation">
   </div>
-    We acquired a specific spectral resonance from the leaf sensor, correlating to the peaks in the image above.
+    Using our hyperspectral imaging system, we captured the distinct spectral resonance emitted by the leaf sensor, corresponding to the peak wavelengths shown in the image above.
   </p>
 
   <h2>BibTeX</h2>
